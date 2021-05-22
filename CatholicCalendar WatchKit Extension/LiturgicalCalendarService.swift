@@ -8,19 +8,26 @@
 import Foundation
 
 protocol LiturgicalCalendarService {
-    func fetchCelebration(for date: Date, completion: (String, Error) -> Void)
+    func fetchCelebration(for date: Date, completion: (Feast, Error?) -> Void)
 }
 
-class CloudKitLiturgicalCalendarService: LiturgicalCalendarService {
-    
-    func fetchCelebration(for date: Date = Date(), completion: (String, Error) -> Void) {
+class CloudKitLiturgiCalService: LiturgicalCalendarService {
+    func fetchCelebration(for date: Date = Date(), completion: (Feast, Error?) -> Void) {
         let cal = Calendar(identifier: .gregorian)
         let year = cal.component(.year, from: date)
         let month = cal.component(.month, from: date)
         let day = cal.component(.day, from: date)
     }
-    
-    private func composeRequest() {
-        
+}
+
+class LocalTestLiturgiCalService: LiturgicalCalendarService {
+    func fetchCelebration(for date: Date = Date(), completion: (Feast, Error?) -> Void) {
+        let cal = Calendar(identifier: .gregorian)
+        if cal.isDateInToday(date) {
+            // trivially true
+            completion("Feast of Blessed Pier Giorgio Frassati", "green", nil)
+        }
     }
+    
+    
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AEB64F5126588DB900E80AC4 /* Feast.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB64F5026588DB900E80AC4 /* Feast.swift */; };
+		AEB64F532658A0DF00E80AC4 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB64F522658A0DF00E80AC4 /* Cache.swift */; };
 		AECCBDB22630F456004E5380 /* CatholicCalendar WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AECCBDB12630F456004E5380 /* CatholicCalendar WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AECCBDB72630F457004E5380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AECCBDB62630F457004E5380 /* Assets.xcassets */; };
 		AECCBDBE2630F457004E5380 /* CatholicCalendar WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AECCBDBD2630F457004E5380 /* CatholicCalendar WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -65,7 +66,8 @@
 
 /* Begin PBXFileReference section */
 		AEB64F5026588DB900E80AC4 /* Feast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feast.swift; sourceTree = "<group>"; };
-		AECCBDAD2630F456004E5380 /* CatholicCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatholicCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEB64F522658A0DF00E80AC4 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		AECCBDAD2630F456004E5380 /* LiturgiCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiturgiCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECCBDB12630F456004E5380 /* CatholicCalendar WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CatholicCalendar WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECCBDB62630F457004E5380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AECCBDB82630F457004E5380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,7 +107,7 @@
 		AECCBDAE2630F456004E5380 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AECCBDAD2630F456004E5380 /* CatholicCalendar.app */,
+				AECCBDAD2630F456004E5380 /* LiturgiCal.app */,
 				AECCBDB12630F456004E5380 /* CatholicCalendar WatchKit App.app */,
 				AECCBDBD2630F457004E5380 /* CatholicCalendar WatchKit Extension.appex */,
 			);
@@ -135,6 +137,7 @@
 				AECCBDCE2630F457004E5380 /* Preview Content */,
 				AECCBDE32630FD03004E5380 /* LiturgicalCalendarService.swift */,
 				AEB64F5026588DB900E80AC4 /* Feast.swift */,
+				AEB64F522658A0DF00E80AC4 /* Cache.swift */,
 			);
 			path = "CatholicCalendar WatchKit Extension";
 			sourceTree = "<group>";
@@ -164,7 +167,7 @@
 			);
 			name = CatholicCalendar;
 			productName = CatholicCalendar;
-			productReference = AECCBDAD2630F456004E5380 /* CatholicCalendar.app */;
+			productReference = AECCBDAD2630F456004E5380 /* LiturgiCal.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
 		AECCBDB02630F456004E5380 /* CatholicCalendar WatchKit App */ = {
@@ -275,6 +278,7 @@
 			files = (
 				AEB64F5126588DB900E80AC4 /* Feast.swift in Sources */,
 				AECCBDC72630F457004E5380 /* NotificationController.swift in Sources */,
+				AEB64F532658A0DF00E80AC4 /* Cache.swift in Sources */,
 				AECCBDE42630FD03004E5380 /* LiturgicalCalendarService.swift in Sources */,
 				AECCBDC52630F457004E5380 /* ContentView.swift in Sources */,
 				AECCBDCB2630F457004E5380 /* ComplicationController.swift in Sources */,
@@ -508,8 +512,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5422L7PASY;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MarissaLeCoz.CatholicCalendar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MarissaLeCoz.LiturgiCal;
+				PRODUCT_NAME = LiturgiCal;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -521,8 +525,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5422L7PASY;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MarissaLeCoz.CatholicCalendar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MarissaLeCoz.LiturgiCal;
+				PRODUCT_NAME = LiturgiCal;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

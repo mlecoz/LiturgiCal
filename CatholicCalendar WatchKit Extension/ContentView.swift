@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var feast: Feast
     var body: some View {
-        Text("Hello, World!")
-            .padding()
+        VStack {
+            Text("\(feast.dateAsFormattedString())")
+            Text("")
+            Text("\(feast.title)")
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color(feast.color))
+        }
+        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(feast: Feast(title: "Third Sunday in Ordinary Time", color: UIColor.lcColor(for: LitColor.green), date: Date()))
     }
 }

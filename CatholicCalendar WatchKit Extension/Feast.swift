@@ -8,20 +8,60 @@
 import Foundation
 import UIKit
 
-struct Feast {
-    let title: String
-    let color: UIColor
+class Feast: ObservableObject {
+    @Published var title: String
+    @Published var color: UIColor
+    @Published var date: Date
+    
+    init(title: String, color: UIColor, date: Date) {
+        self.title = title
+        self.color = color
+        self.date = date
+    }
+    
+    func dateAsFormattedString() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        return dateFormatter.string(from: self.date)
+    }
+    
+    static func errorFeast() -> Feast {
+        return Feast(title: "Error", color: .white, date: Date())
+    }
+}
+
+enum LitColor {
+    case green
+    case white
+    case red
+    case rose
+    case violet
+    case black
+    case gold
+    case silver
 }
 
 extension UIColor {
-    // TODO choose custom colors
-    var lcGreen: UIColor {
-        return .green
-    }
     
-    var lcWhite: UIColor {
-        return .white
+    static func lcColor(for litColor: LitColor) -> UIColor {
+        switch litColor {
+        case .green:
+            return .green
+        case .white:
+            return .white
+        case .red:
+            return .red
+        case .rose:
+            return .magenta
+        case .violet:
+            return .purple
+        case .black:
+            return .black
+        case .gold:
+            return .brown
+        case .silver:
+            return .gray
+        }
+        // TODO choose custom colors
     }
-    
-    // TODO add more colors
 }
