@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AEB64F5126588DB900E80AC4 /* Feast.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB64F5026588DB900E80AC4 /* Feast.swift */; };
+		AECCBDB22630F456004E5380 /* CatholicCalendar WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AECCBDB12630F456004E5380 /* CatholicCalendar WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AECCBDB72630F457004E5380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AECCBDB62630F457004E5380 /* Assets.xcassets */; };
+		AECCBDBE2630F457004E5380 /* CatholicCalendar WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AECCBDBD2630F457004E5380 /* CatholicCalendar WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AECCBDC32630F457004E5380 /* CatholicCalendarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCBDC22630F457004E5380 /* CatholicCalendarApp.swift */; };
+		AECCBDC52630F457004E5380 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCBDC42630F457004E5380 /* ContentView.swift */; };
+		AECCBDC72630F457004E5380 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCBDC62630F457004E5380 /* NotificationController.swift */; };
+		AECCBDC92630F457004E5380 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCBDC82630F457004E5380 /* NotificationView.swift */; };
+		AECCBDCB2630F457004E5380 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCBDCA2630F457004E5380 /* ComplicationController.swift */; };
+		AECCBDCD2630F457004E5380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AECCBDCC2630F457004E5380 /* Assets.xcassets */; };
+		AECCBDD02630F457004E5380 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AECCBDCF2630F457004E5380 /* Preview Assets.xcassets */; };
+		AECCBDE42630FD03004E5380 /* LiturgicalCalendarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCBDE32630FD03004E5380 /* LiturgicalCalendarService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AECCBDB32630F456004E5380 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AECCBDA72630F456004E5380 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AECCBDB02630F456004E5380;
+			remoteInfo = "CatholicCalendar WatchKit App";
+		};
+		AECCBDBF2630F457004E5380 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AECCBDA72630F456004E5380 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AECCBDBC2630F457004E5380;
+			remoteInfo = "CatholicCalendar WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AECCBDD82630F457004E5380 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AECCBDBE2630F457004E5380 /* CatholicCalendar WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECCBDDC2630F457004E5380 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AECCBDB22630F456004E5380 /* CatholicCalendar WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AEB64F5026588DB900E80AC4 /* Feast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feast.swift; sourceTree = "<group>"; };
+		AECCBDAD2630F456004E5380 /* CatholicCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatholicCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AECCBDB12630F456004E5380 /* CatholicCalendar WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CatholicCalendar WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AECCBDB62630F457004E5380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AECCBDB82630F457004E5380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AECCBDBD2630F457004E5380 /* CatholicCalendar WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CatholicCalendar WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AECCBDC22630F457004E5380 /* CatholicCalendarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatholicCalendarApp.swift; sourceTree = "<group>"; };
+		AECCBDC42630F457004E5380 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AECCBDC62630F457004E5380 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		AECCBDC82630F457004E5380 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		AECCBDCA2630F457004E5380 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		AECCBDCC2630F457004E5380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AECCBDCF2630F457004E5380 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AECCBDD12630F457004E5380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AECCBDD22630F457004E5380 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		AECCBDE32630FD03004E5380 /* LiturgicalCalendarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiturgicalCalendarService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AECCBDBA2630F457004E5380 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AECCBDA62630F456004E5380 = {
+			isa = PBXGroup;
+			children = (
+				AECCBDB52630F456004E5380 /* CatholicCalendar WatchKit App */,
+				AECCBDC12630F457004E5380 /* CatholicCalendar WatchKit Extension */,
+				AECCBDAE2630F456004E5380 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AECCBDAE2630F456004E5380 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AECCBDAD2630F456004E5380 /* CatholicCalendar.app */,
+				AECCBDB12630F456004E5380 /* CatholicCalendar WatchKit App.app */,
+				AECCBDBD2630F457004E5380 /* CatholicCalendar WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AECCBDB52630F456004E5380 /* CatholicCalendar WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				AECCBDB62630F457004E5380 /* Assets.xcassets */,
+				AECCBDB82630F457004E5380 /* Info.plist */,
+			);
+			path = "CatholicCalendar WatchKit App";
+			sourceTree = "<group>";
+		};
+		AECCBDC12630F457004E5380 /* CatholicCalendar WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AECCBDC22630F457004E5380 /* CatholicCalendarApp.swift */,
+				AECCBDC42630F457004E5380 /* ContentView.swift */,
+				AECCBDC62630F457004E5380 /* NotificationController.swift */,
+				AECCBDC82630F457004E5380 /* NotificationView.swift */,
+				AECCBDCA2630F457004E5380 /* ComplicationController.swift */,
+				AECCBDCC2630F457004E5380 /* Assets.xcassets */,
+				AECCBDD12630F457004E5380 /* Info.plist */,
+				AECCBDD22630F457004E5380 /* PushNotificationPayload.apns */,
+				AECCBDCE2630F457004E5380 /* Preview Content */,
+				AECCBDE32630FD03004E5380 /* LiturgicalCalendarService.swift */,
+				AEB64F5026588DB900E80AC4 /* Feast.swift */,
+			);
+			path = "CatholicCalendar WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		AECCBDCE2630F457004E5380 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AECCBDCF2630F457004E5380 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AECCBDAC2630F456004E5380 /* CatholicCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AECCBDDD2630F457004E5380 /* Build configuration list for PBXNativeTarget "CatholicCalendar" */;
+			buildPhases = (
+				AECCBDAB2630F456004E5380 /* Resources */,
+				AECCBDDC2630F457004E5380 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AECCBDB42630F456004E5380 /* PBXTargetDependency */,
+			);
+			name = CatholicCalendar;
+			productName = CatholicCalendar;
+			productReference = AECCBDAD2630F456004E5380 /* CatholicCalendar.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		AECCBDB02630F456004E5380 /* CatholicCalendar WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AECCBDD92630F457004E5380 /* Build configuration list for PBXNativeTarget "CatholicCalendar WatchKit App" */;
+			buildPhases = (
+				AECCBDAF2630F456004E5380 /* Resources */,
+				AECCBDD82630F457004E5380 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AECCBDC02630F457004E5380 /* PBXTargetDependency */,
+			);
+			name = "CatholicCalendar WatchKit App";
+			productName = "CatholicCalendar WatchKit App";
+			productReference = AECCBDB12630F456004E5380 /* CatholicCalendar WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		AECCBDBC2630F457004E5380 /* CatholicCalendar WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AECCBDD52630F457004E5380 /* Build configuration list for PBXNativeTarget "CatholicCalendar WatchKit Extension" */;
+			buildPhases = (
+				AECCBDB92630F457004E5380 /* Sources */,
+				AECCBDBA2630F457004E5380 /* Frameworks */,
+				AECCBDBB2630F457004E5380 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CatholicCalendar WatchKit Extension";
+			productName = "CatholicCalendar WatchKit Extension";
+			productReference = AECCBDBD2630F457004E5380 /* CatholicCalendar WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AECCBDA72630F456004E5380 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					AECCBDAC2630F456004E5380 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					AECCBDB02630F456004E5380 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					AECCBDBC2630F457004E5380 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = AECCBDAA2630F456004E5380 /* Build configuration list for PBXProject "CatholicCalendar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AECCBDA62630F456004E5380;
+			productRefGroup = AECCBDAE2630F456004E5380 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AECCBDAC2630F456004E5380 /* CatholicCalendar */,
+				AECCBDB02630F456004E5380 /* CatholicCalendar WatchKit App */,
+				AECCBDBC2630F457004E5380 /* CatholicCalendar WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AECCBDAB2630F456004E5380 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECCBDAF2630F456004E5380 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECCBDB72630F457004E5380 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECCBDBB2630F457004E5380 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECCBDD02630F457004E5380 /* Preview Assets.xcassets in Resources */,
+				AECCBDCD2630F457004E5380 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AECCBDB92630F457004E5380 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEB64F5126588DB900E80AC4 /* Feast.swift in Sources */,
+				AECCBDC72630F457004E5380 /* NotificationController.swift in Sources */,
+				AECCBDE42630FD03004E5380 /* LiturgicalCalendarService.swift in Sources */,
+				AECCBDC52630F457004E5380 /* ContentView.swift in Sources */,
+				AECCBDCB2630F457004E5380 /* ComplicationController.swift in Sources */,
+				AECCBDC32630F457004E5380 /* CatholicCalendarApp.swift in Sources */,
+				AECCBDC92630F457004E5380 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AECCBDB42630F456004E5380 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AECCBDB02630F456004E5380 /* CatholicCalendar WatchKit App */;
+			targetProxy = AECCBDB32630F456004E5380 /* PBXContainerItemProxy */;
+		};
+		AECCBDC02630F457004E5380 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AECCBDBC2630F457004E5380 /* CatholicCalendar WatchKit Extension */;
+			targetProxy = AECCBDBF2630F457004E5380 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AECCBDD32630F457004E5380 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AECCBDD42630F457004E5380 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AECCBDD62630F457004E5380 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CatholicCalendar WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 5422L7PASY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "CatholicCalendar WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MarissaLeCoz.CatholicCalendar.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		AECCBDD72630F457004E5380 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CatholicCalendar WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 5422L7PASY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "CatholicCalendar WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MarissaLeCoz.CatholicCalendar.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		AECCBDDA2630F457004E5380 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5422L7PASY;
+				IBSC_MODULE = CatholicCalendar_WatchKit_Extension;
+				INFOPLIST_FILE = "CatholicCalendar WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MarissaLeCoz.CatholicCalendar.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		AECCBDDB2630F457004E5380 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5422L7PASY;
+				IBSC_MODULE = CatholicCalendar_WatchKit_Extension;
+				INFOPLIST_FILE = "CatholicCalendar WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MarissaLeCoz.CatholicCalendar.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		AECCBDDE2630F457004E5380 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5422L7PASY;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MarissaLeCoz.CatholicCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AECCBDDF2630F457004E5380 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5422L7PASY;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MarissaLeCoz.CatholicCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AECCBDAA2630F456004E5380 /* Build configuration list for PBXProject "CatholicCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECCBDD32630F457004E5380 /* Debug */,
+				AECCBDD42630F457004E5380 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AECCBDD52630F457004E5380 /* Build configuration list for PBXNativeTarget "CatholicCalendar WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECCBDD62630F457004E5380 /* Debug */,
+				AECCBDD72630F457004E5380 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AECCBDD92630F457004E5380 /* Build configuration list for PBXNativeTarget "CatholicCalendar WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECCBDDA2630F457004E5380 /* Debug */,
+				AECCBDDB2630F457004E5380 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AECCBDDD2630F457004E5380 /* Build configuration list for PBXNativeTarget "CatholicCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECCBDDE2630F457004E5380 /* Debug */,
+				AECCBDDF2630F457004E5380 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AECCBDA72630F456004E5380 /* Project object */;
+}
