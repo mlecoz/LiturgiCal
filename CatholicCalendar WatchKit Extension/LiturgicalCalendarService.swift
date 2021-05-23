@@ -22,7 +22,7 @@ class CloudKitLiturgiCalService: LiturgicalCalendarService {
 
 class LocalTestLiturgiCalService: LiturgicalCalendarService {
     func fetchCelebration(for date: Date = Date(), completion: (Feast, Error?) -> Void) {
-        completion(Feast(title: "Feast of Bl. Pier Giorgio Frassati", color: .green, date: Date()), nil)
+        completion(Feast(title: "Feast of St. John Paul II", color: .green, date: Date()), nil)
     }
     
     

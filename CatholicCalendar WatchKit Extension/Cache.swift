@@ -7,6 +7,9 @@
 
 import Foundation
 
+// TODO doesn't seem to be persisting in cache between launches
+// TODO onAppear only calls when launch app for first time. Not whenever foreground: https://stackoverflow.com/questions/63423845/swiftui-onappear-only-running-once
+
 class Cache {
     // UserDefaults is backing store
     // Stores:
@@ -17,19 +20,19 @@ class Cache {
     static let tomorrowKey = "tomorrowKey"
     
     static var isCacheStaleForToday: Bool = {
-        guard let allegedTodayFeast = UserDefaults.standard.object(forKey: todayKey) as? Feast else { return true }
+        guard let allegedTodayFeast = Cache.getTodayFeastFromCache() else { return true }
         let cal = Calendar(identifier: .gregorian)
         return !cal.isDateInToday(allegedTodayFeast.date)
     }()
     
     static var isCacheStaleForTomorrow: Bool = {
-        guard let allegedTmrwFeast = UserDefaults.standard.object(forKey: tomorrowKey) as? Feast else { return true }
+        guard let allegedTmrwFeast = Cache.getTomorrowFeastFromCache() else { return true }
         let cal = Calendar(identifier: .gregorian)
         return !cal.isDateInTomorrow(allegedTmrwFeast.date)
     }()
     
     static var isTomorrowToday: Bool = {
-        guard let allegedTmrwFeast = UserDefaults.standard.object(forKey: tomorrowKey) as? Feast else { return false }
+        guard let allegedTmrwFeast = getTomorrowFeastFromCache() else { return false }
         let cal = Calendar(identifier: .gregorian)
         return cal.isDateInToday(allegedTmrwFeast.date)
     }()
