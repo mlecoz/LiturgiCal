@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AEB64F5126588DB900E80AC4 /* Feast.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB64F5026588DB900E80AC4 /* Feast.swift */; };
 		AEB64F532658A0DF00E80AC4 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB64F522658A0DF00E80AC4 /* Cache.swift */; };
+		AEB64F552659912B00E80AC4 /* CurrentFeastHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB64F542659912B00E80AC4 /* CurrentFeastHandler.swift */; };
 		AECCBDB22630F456004E5380 /* CatholicCalendar WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AECCBDB12630F456004E5380 /* CatholicCalendar WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AECCBDB72630F457004E5380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AECCBDB62630F457004E5380 /* Assets.xcassets */; };
 		AECCBDBE2630F457004E5380 /* CatholicCalendar WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AECCBDBD2630F457004E5380 /* CatholicCalendar WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -67,6 +68,7 @@
 /* Begin PBXFileReference section */
 		AEB64F5026588DB900E80AC4 /* Feast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feast.swift; sourceTree = "<group>"; };
 		AEB64F522658A0DF00E80AC4 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		AEB64F542659912B00E80AC4 /* CurrentFeastHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentFeastHandler.swift; sourceTree = "<group>"; };
 		AECCBDAD2630F456004E5380 /* LiturgiCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiturgiCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECCBDB12630F456004E5380 /* CatholicCalendar WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CatholicCalendar WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECCBDB62630F457004E5380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				AECCBDCE2630F457004E5380 /* Preview Content */,
 				AECCBDE32630FD03004E5380 /* LiturgicalCalendarService.swift */,
 				AEB64F5026588DB900E80AC4 /* Feast.swift */,
+				AEB64F542659912B00E80AC4 /* CurrentFeastHandler.swift */,
 				AEB64F522658A0DF00E80AC4 /* Cache.swift */,
 			);
 			path = "CatholicCalendar WatchKit Extension";
@@ -283,6 +286,7 @@
 				AECCBDC52630F457004E5380 /* ContentView.swift in Sources */,
 				AECCBDCB2630F457004E5380 /* ComplicationController.swift in Sources */,
 				AECCBDC32630F457004E5380 /* CatholicCalendarApp.swift in Sources */,
+				AEB64F552659912B00E80AC4 /* CurrentFeastHandler.swift in Sources */,
 				AECCBDC92630F457004E5380 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

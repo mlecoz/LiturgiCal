@@ -12,7 +12,7 @@ struct CatholicCalendarApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView(feast: Feast(title: "Feast of Bl. Pier Giorgio Frassati", color: UIColor.lcColor(for: LitColor.green), date: Date()))
+                ContentView(feastHandler: CurrentFeastHandler(feast: nil, feastService: LocalTestLiturgiCalService()))
             }
         }
 

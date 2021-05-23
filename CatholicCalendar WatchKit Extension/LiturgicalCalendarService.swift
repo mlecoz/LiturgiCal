@@ -22,11 +22,7 @@ class CloudKitLiturgiCalService: LiturgicalCalendarService {
 
 class LocalTestLiturgiCalService: LiturgicalCalendarService {
     func fetchCelebration(for date: Date = Date(), completion: (Feast, Error?) -> Void) {
-        let cal = Calendar(identifier: .gregorian)
-        if cal.isDateInToday(date) {
-            // trivially true
-            completion("Feast of Blessed Pier Giorgio Frassati", "green", nil)
-        }
+        completion(Feast(title: "Feast of Bl. Pier Giorgio Frassati", color: .green, date: Date()), nil)
     }
     
     
