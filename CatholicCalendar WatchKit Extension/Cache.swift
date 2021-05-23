@@ -35,7 +35,14 @@ class Cache {
     }()
     
     private static func put(feast: Feast, for key: String) {
-        UserDefaults.standard.set(feast, forKey: key)
+        do {
+            let encodedData = try NSKeyedArchiver.archivedData(withRootObject: feast, requiringSecureCoding: false)
+            UserDefaults.standard.set(encodedData, forKey: key)
+            UserDefaults.standard.synchronize()
+        } catch (let error) {
+            print(error)
+        }
+        
     }
     
     static func putToday(feast: Feast) {
@@ -47,8 +54,13 @@ class Cache {
     }
     
     private static func get(key: String) -> Feast? {
-        guard let feast = UserDefaults.standard.object(forKey: key) as? Feast else { return nil }
-        return feast
+        do {
+            guard let codedFeast = UserDefaults.standard.object(forKey: key) as? Data, let feast = try NSKeyedUnarchiver.unarchivedObject(ofClass: Feast.self, from: codedFeast) else { return nil }
+            return feast
+        } catch (let error) {
+            print(error)
+        }
+        return nil
     }
     
     static func getTodayFeastFromCache() -> Feast? {

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CurrentFeastHandler: NSObject, ObservableObject {
+class CurrentFeastHandler: ObservableObject {
     @Published var feast: Feast?
     
     let feastService: LiturgicalCalendarService

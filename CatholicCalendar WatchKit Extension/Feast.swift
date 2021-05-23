@@ -8,7 +8,8 @@
 import Foundation
 import UIKit
 
-class Feast: ObservableObject {
+class Feast: NSObject, ObservableObject, NSCoding {
+    
     @Published var title: String
     @Published var color: UIColor
     @Published var date: Date
@@ -17,6 +18,19 @@ class Feast: ObservableObject {
         self.title = title
         self.color = color
         self.date = date
+    }
+    
+    required convenience init?(coder: NSCoder) {
+        let title = coder.decodeObject(forKey: "title") as! String
+        let color = coder.decodeObject(forKey: "color") as! UIColor
+        let date = coder.decodeObject(forKey: "date") as! Date
+        self.init(title: title, color: color, date: date)
+    }
+    
+    func encode(with coder: NSCoder) {
+        coder.encode(title, forKey: "title")
+        coder.encode(color, forKey: "color")
+        coder.encode(date, forKey: "date")
     }
     
     func dateAsFormattedString() -> String {
